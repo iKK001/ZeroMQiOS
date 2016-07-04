@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F4D75BB1D298D9900376C02 /* zeromq-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */; };
+		8F512EB81D29789E00FD9061 /* ZeroMQWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F512EB71D29789E00FD9061 /* ZeroMQWrapper.mm */; };
+		8FA429A91D290BB3003108D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429A81D290BB3003108D5 /* AppDelegate.swift */; };
+		8FA429AB1D290BB3003108D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429AA1D290BB3003108D5 /* ViewController.swift */; };
+		8FA429AE1D290BB3003108D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA429AC1D290BB3003108D5 /* Main.storyboard */; };
+		8FA429B01D290BB3003108D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA429AF1D290BB3003108D5 /* Assets.xcassets */; };
+		8FA429B31D290BB3003108D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA429B11D290BB3003108D5 /* LaunchScreen.storyboard */; };
+		8FA429BE1D290BB3003108D5 /* ZeroMQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429BD1D290BB3003108D5 /* ZeroMQTests.swift */; };
+		8FA429C91D290BB3003108D5 /* ZeroMQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429C81D290BB3003108D5 /* ZeroMQUITests.swift */; };
+		8FA429DE1D290C9E003108D5 /* ZeroMQFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA429BA1D290BB3003108D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA4299D1D290BB3003108D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA429A41D290BB3003108D5;
+			remoteInfo = ZeroMQ;
+		};
+		8FA429C51D290BB3003108D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA4299D1D290BB3003108D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA429A41D290BB3003108D5;
+			remoteInfo = ZeroMQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "zeromq-ios.framework"; sourceTree = "<group>"; };
+		8F512EB71D29789E00FD9061 /* ZeroMQWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZeroMQWrapper.mm; sourceTree = "<group>"; };
+		8FA429A51D290BB3003108D5 /* ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroMQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA429A81D290BB3003108D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FA429AA1D290BB3003108D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA429AD1D290BB3003108D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FA429AF1D290BB3003108D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA429B21D290BB3003108D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FA429B41D290BB3003108D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA429B91D290BB3003108D5 /* ZeroMQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroMQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA429BD1D290BB3003108D5 /* ZeroMQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroMQTests.swift; sourceTree = "<group>"; };
+		8FA429BF1D290BB3003108D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA429C41D290BB3003108D5 /* ZeroMQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroMQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA429C81D290BB3003108D5 /* ZeroMQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroMQUITests.swift; sourceTree = "<group>"; };
+		8FA429CA1D290BB3003108D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA429D81D290BFA003108D5 /* ZeroMQ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeroMQ-Bridging-Header.h"; sourceTree = "<group>"; };
+		8FA429DA1D290BFA003108D5 /* ZeroMQWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroMQWrapper.h; sourceTree = "<group>"; };
+		8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZeroMQFunctions.cpp; sourceTree = "<group>"; };
+		8FA429DD1D290C9E003108D5 /* ZeroMQFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ZeroMQFunctions.hpp; sourceTree = "<group>"; };
+		8FA429F71D2923D1003108D5 /* zHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zHelpers.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA429A21D290BB3003108D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4D75BB1D298D9900376C02 /* zeromq-ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429B61D290BB3003108D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429C11D290BB3003108D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA4299C1D290BB3003108D5 = {
+			isa = PBXGroup;
+			children = (
+				8FA429A71D290BB3003108D5 /* ZeroMQ */,
+				8FA429BC1D290BB3003108D5 /* ZeroMQTests */,
+				8FA429C71D290BB3003108D5 /* ZeroMQUITests */,
+				8FA429A61D290BB3003108D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA429A61D290BB3003108D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA429A51D290BB3003108D5 /* ZeroMQ.app */,
+				8FA429B91D290BB3003108D5 /* ZeroMQTests.xctest */,
+				8FA429C41D290BB3003108D5 /* ZeroMQUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA429A71D290BB3003108D5 /* ZeroMQ */ = {
+			isa = PBXGroup;
+			children = (
+				8FA429A81D290BB3003108D5 /* AppDelegate.swift */,
+				8FA429AA1D290BB3003108D5 /* ViewController.swift */,
+				8FA429AC1D290BB3003108D5 /* Main.storyboard */,
+				8FA429AF1D290BB3003108D5 /* Assets.xcassets */,
+				8FA429B11D290BB3003108D5 /* LaunchScreen.storyboard */,
+				8FA429B41D290BB3003108D5 /* Info.plist */,
+				8FA429DA1D290BFA003108D5 /* ZeroMQWrapper.h */,
+				8F512EB71D29789E00FD9061 /* ZeroMQWrapper.mm */,
+				8FA429DD1D290C9E003108D5 /* ZeroMQFunctions.hpp */,
+				8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */,
+				8FA429F71D2923D1003108D5 /* zHelpers.h */,
+				8FA429D81D290BFA003108D5 /* ZeroMQ-Bridging-Header.h */,
+				8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */,
+			);
+			path = ZeroMQ;
+			sourceTree = "<group>";
+		};
+		8FA429BC1D290BB3003108D5 /* ZeroMQTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA429BD1D290BB3003108D5 /* ZeroMQTests.swift */,
+				8FA429BF1D290BB3003108D5 /* Info.plist */,
+			);
+			path = ZeroMQTests;
+			sourceTree = "<group>";
+		};
+		8FA429C71D290BB3003108D5 /* ZeroMQUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA429C81D290BB3003108D5 /* ZeroMQUITests.swift */,
+				8FA429CA1D290BB3003108D5 /* Info.plist */,
+			);
+			path = ZeroMQUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FA429A41D290BB3003108D5 /* ZeroMQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA429CD1D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQ" */;
+			buildPhases = (
+				8FA429A11D290BB3003108D5 /* Sources */,
+				8FA429A21D290BB3003108D5 /* Frameworks */,
+				8FA429A31D290BB3003108D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroMQ;
+			productName = ZeroMQ;
+			productReference = 8FA429A51D290BB3003108D5 /* ZeroMQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FA429B81D290BB3003108D5 /* ZeroMQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA429D01D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQTests" */;
+			buildPhases = (
+				8FA429B51D290BB3003108D5 /* Sources */,
+				8FA429B61D290BB3003108D5 /* Frameworks */,
+				8FA429B71D290BB3003108D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA429BB1D290BB3003108D5 /* PBXTargetDependency */,
+			);
+			name = ZeroMQTests;
+			productName = ZeroMQTests;
+			productReference = 8FA429B91D290BB3003108D5 /* ZeroMQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FA429C31D290BB3003108D5 /* ZeroMQUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA429D31D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQUITests" */;
+			buildPhases = (
+				8FA429C01D290BB3003108D5 /* Sources */,
+				8FA429C11D290BB3003108D5 /* Frameworks */,
+				8FA429C21D290BB3003108D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA429C61D290BB3003108D5 /* PBXTargetDependency */,
+			);
+			name = ZeroMQUITests;
+			productName = ZeroMQUITests;
+			productReference = 8FA429C41D290BB3003108D5 /* ZeroMQUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FA4299D1D290BB3003108D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Stephan Korner";
+				TargetAttributes = {
+					8FA429A41D290BB3003108D5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					8FA429B81D290BB3003108D5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8FA429A41D290BB3003108D5;
+					};
+					8FA429C31D290BB3003108D5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 8FA429A41D290BB3003108D5;
+					};
+				};
+			};
+			buildConfigurationList = 8FA429A01D290BB3003108D5 /* Build configuration list for PBXProject "ZeroMQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FA4299C1D290BB3003108D5;
+			productRefGroup = 8FA429A61D290BB3003108D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FA429A41D290BB3003108D5 /* ZeroMQ */,
+				8FA429B81D290BB3003108D5 /* ZeroMQTests */,
+				8FA429C31D290BB3003108D5 /* ZeroMQUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA429A31D290BB3003108D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA429B31D290BB3003108D5 /* LaunchScreen.storyboard in Resources */,
+				8FA429B01D290BB3003108D5 /* Assets.xcassets in Resources */,
+				8FA429AE1D290BB3003108D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429B71D290BB3003108D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429C21D290BB3003108D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA429A11D290BB3003108D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA429AB1D290BB3003108D5 /* ViewController.swift in Sources */,
+				8FA429A91D290BB3003108D5 /* AppDelegate.swift in Sources */,
+				8F512EB81D29789E00FD9061 /* ZeroMQWrapper.mm in Sources */,
+				8FA429DE1D290C9E003108D5 /* ZeroMQFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429B51D290BB3003108D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA429BE1D290BB3003108D5 /* ZeroMQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA429C01D290BB3003108D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA429C91D290BB3003108D5 /* ZeroMQUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA429BB1D290BB3003108D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA429A41D290BB3003108D5 /* ZeroMQ */;
+			targetProxy = 8FA429BA1D290BB3003108D5 /* PBXContainerItemProxy */;
+		};
+		8FA429C61D290BB3003108D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA429A41D290BB3003108D5 /* ZeroMQ */;
+			targetProxy = 8FA429C51D290BB3003108D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FA429AC1D290BB3003108D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA429AD1D290BB3003108D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FA429B11D290BB3003108D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA429B21D290BB3003108D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA429CB1D290BB3003108D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/zeromq-ios.framework/Headers/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lstdc++",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		8FA429CC1D290BB3003108D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/zeromq-ios.framework/Headers/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lstdc++",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		8FA429CE1D290BB3003108D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQ",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/zeromq-ios.framework/Headers/**";
+				INFOPLIST_FILE = ZeroMQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQ",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					$inherited,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroMQ/ZeroMQ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		8FA429CF1D290BB3003108D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQ",
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/zeromq-ios.framework/Headers/**";
+				INFOPLIST_FILE = ZeroMQ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZeroMQ",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					$inherited,
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZeroMQ/ZeroMQ-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		8FA429D11D290BB3003108D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZeroMQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroMQ.app/ZeroMQ";
+			};
+			name = Debug;
+		};
+		8FA429D21D290BB3003108D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZeroMQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroMQ.app/ZeroMQ";
+			};
+			name = Release;
+		};
+		8FA429D41D290BB3003108D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZeroMQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZeroMQ;
+			};
+			name = Debug;
+		};
+		8FA429D51D290BB3003108D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZeroMQUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.ideenkaffee.30love.ZeroMQUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZeroMQ;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA429A01D290BB3003108D5 /* Build configuration list for PBXProject "ZeroMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA429CB1D290BB3003108D5 /* Debug */,
+				8FA429CC1D290BB3003108D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA429CD1D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA429CE1D290BB3003108D5 /* Debug */,
+				8FA429CF1D290BB3003108D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA429D01D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA429D11D290BB3003108D5 /* Debug */,
+				8FA429D21D290BB3003108D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA429D31D290BB3003108D5 /* Build configuration list for PBXNativeTarget "ZeroMQUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA429D41D290BB3003108D5 /* Debug */,
+				8FA429D51D290BB3003108D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FA4299D1D290BB3003108D5 /* Project object */;
+}
