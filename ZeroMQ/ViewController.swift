@@ -15,9 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let zeroMQ = ZeroMQWrapper()
-//        let _:Int32 = zeroMQ.startMain()
         let i:Int32 = zeroMQ.doTest()
-        
         print(i);
     }
 

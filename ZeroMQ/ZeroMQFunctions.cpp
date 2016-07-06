@@ -53,8 +53,7 @@ int Main() {
     return 0;
 }
 
-int Test() {
-    void *context = zmq_init (1);    
+int Test() {    
    
     return 0;
 }
