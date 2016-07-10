@@ -10,10 +10,7 @@
 #define ZeroMQFunctions_hpp
 
 #include <stdio.h>
-#include <zeromq-ios/zmq.h>
-//#include "zmq.h"
 
 #endif /* ZeroMQFunctions_hpp */
 
-int Main();
-int Test();
+int Test1();

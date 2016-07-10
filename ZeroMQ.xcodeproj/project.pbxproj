@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F4D75BB1D298D9900376C02 /* zeromq-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */; };
 		8F512EB81D29789E00FD9061 /* ZeroMQWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8F512EB71D29789E00FD9061 /* ZeroMQWrapper.mm */; };
 		8FA429A91D290BB3003108D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429A81D290BB3003108D5 /* AppDelegate.swift */; };
 		8FA429AB1D290BB3003108D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429AA1D290BB3003108D5 /* ViewController.swift */; };
@@ -17,6 +16,9 @@
 		8FA429BE1D290BB3003108D5 /* ZeroMQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429BD1D290BB3003108D5 /* ZeroMQTests.swift */; };
 		8FA429C91D290BB3003108D5 /* ZeroMQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429C81D290BB3003108D5 /* ZeroMQUITests.swift */; };
 		8FA429DE1D290C9E003108D5 /* ZeroMQFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */; };
+		8FD3CA7F1D3291DA00C9249F /* sodium in Resources */ = {isa = PBXBuildFile; fileRef = 8FD3CA7D1D3291DA00C9249F /* sodium */; };
+		8FD3CA831D32920B00C9249F /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD3CA821D32920B00C9249F /* libzmq.a */; };
+		8FD3CA851D32921000C9249F /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD3CA841D32921000C9249F /* libsodium.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "zeromq-ios.framework"; sourceTree = "<group>"; };
 		8F512EB71D29789E00FD9061 /* ZeroMQWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZeroMQWrapper.mm; sourceTree = "<group>"; };
 		8FA429A51D290BB3003108D5 /* ZeroMQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroMQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA429A81D290BB3003108D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +58,12 @@
 		8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZeroMQFunctions.cpp; sourceTree = "<group>"; };
 		8FA429DD1D290C9E003108D5 /* ZeroMQFunctions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ZeroMQFunctions.hpp; sourceTree = "<group>"; };
 		8FA429F71D2923D1003108D5 /* zHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zHelpers.h; sourceTree = "<group>"; };
+		8FD3CA7D1D3291DA00C9249F /* sodium */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sodium; sourceTree = "<group>"; };
+		8FD3CA7E1D3291DA00C9249F /* sodium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sodium.h; sourceTree = "<group>"; };
+		8FD3CA801D3291E500C9249F /* zmq_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq_utils.h; sourceTree = "<group>"; };
+		8FD3CA811D3291E500C9249F /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
+		8FD3CA821D32920B00C9249F /* libzmq.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzmq.a; sourceTree = "<group>"; };
+		8FD3CA841D32921000C9249F /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F4D75BB1D298D9900376C02 /* zeromq-ios.framework in Frameworks */,
+				8FD3CA851D32921000C9249F /* libsodium.a in Frameworks */,
+				8FD3CA831D32920B00C9249F /* libzmq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +128,7 @@
 				8FA429DC1D290C9E003108D5 /* ZeroMQFunctions.cpp */,
 				8FA429F71D2923D1003108D5 /* zHelpers.h */,
 				8FA429D81D290BFA003108D5 /* ZeroMQ-Bridging-Header.h */,
-				8F4D75BA1D298D9900376C02 /* zeromq-ios.framework */,
+				8FD3CA7C1D32915D00C9249F /* Frameworks */,
 			);
 			path = ZeroMQ;
 			sourceTree = "<group>";
@@ -141,6 +149,35 @@
 				8FA429CA1D290BB3003108D5 /* Info.plist */,
 			);
 			path = ZeroMQUITests;
+			sourceTree = "<group>";
+		};
+		8FD3CA7A1D32914300C9249F /* include_zeromq */ = {
+			isa = PBXGroup;
+			children = (
+				8FD3CA801D3291E500C9249F /* zmq_utils.h */,
+				8FD3CA811D3291E500C9249F /* zmq.h */,
+			);
+			name = include_zeromq;
+			sourceTree = "<group>";
+		};
+		8FD3CA7B1D32915100C9249F /* include_libsodium */ = {
+			isa = PBXGroup;
+			children = (
+				8FD3CA7D1D3291DA00C9249F /* sodium */,
+				8FD3CA7E1D3291DA00C9249F /* sodium.h */,
+			);
+			name = include_libsodium;
+			sourceTree = "<group>";
+		};
+		8FD3CA7C1D32915D00C9249F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FD3CA7B1D32915100C9249F /* include_libsodium */,
+				8FD3CA7A1D32914300C9249F /* include_zeromq */,
+				8FD3CA821D32920B00C9249F /* libzmq.a */,
+				8FD3CA841D32921000C9249F /* libsodium.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +287,7 @@
 				8FA429B31D290BB3003108D5 /* LaunchScreen.storyboard in Resources */,
 				8FA429B01D290BB3003108D5 /* Assets.xcassets in Resources */,
 				8FA429AE1D290BB3003108D5 /* Main.storyboard in Resources */,
+				8FD3CA7F1D3291DA00C9249F /* sodium in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

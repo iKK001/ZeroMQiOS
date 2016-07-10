@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let zeroMQ = ZeroMQWrapper()
-        let i:Int32 = zeroMQ.doTest()
+        let i:Int32 = zeroMQ.doTest1()
+        
+        
         print(i);
     }
 

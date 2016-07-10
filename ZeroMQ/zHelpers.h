@@ -24,7 +24,7 @@
 
 //  Include a bunch of headers that we will need in the examples
 
-#include <zeromq-ios/zmq.h>
+#include "zmq.h"
 
 #include <assert.h>
 #include <signal.h>

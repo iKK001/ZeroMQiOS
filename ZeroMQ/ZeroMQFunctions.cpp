@@ -9,7 +9,6 @@
 #include "ZeroMQFunctions.hpp"
 #include "zHelpers.h"
 
-//
 //  Client-side pirate
 //  Use zmq_poll to do a safe request-reply
 //  To run, start hwserver and then randomly kill/restart it
@@ -17,10 +16,10 @@
 #define REQUEST_TIMEOUT     2500    //  msecs
 #define REQUEST_RETRIES     3       //  Before we abandon
 
-int Main() {
+int Test1() {
     void *context = zmq_init (1);
     void *client = zmq_socket (context, ZMQ_REQ);
-    zmq_connect (client, "tcp://localhost:5555");
+    zmq_connect (client, "tcp://192.168.178.21:5555");
     
     //  Socket to talk to server
     printf ("Connecting to hello world server...\n");

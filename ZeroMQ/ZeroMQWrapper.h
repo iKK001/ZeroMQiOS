@@ -15,13 +15,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#include <zeromq-ios/zmq.h>
 #include "ZeroMQFunctions.hpp"
 
 @interface ZeroMQWrapper : NSObject
 
-// - (int) startMain;
-- (int) doTest;
+- (int) doTest1;
 
 @end
 

@@ -12,16 +12,9 @@
 
 @implementation ZeroMQWrapper
 
-//- (int) startMain {
-//
-//    int returnInt = Main();
-//
-//    return returnInt;
-//}
-
-- (int) doTest {
+- (int) doTest1 {
     
-    int returnInt = Test();
+    int returnInt = Test1();
     
     return returnInt;
 }
