@@ -3,13 +3,13 @@ Creation of an iOS App with a zeroMQ Hello-world Example
 First, you need to do some work:
 
  - Get zeromq.a and libsodium.a libraries
-  - best is to use the shell script of Drew Crawford :
+ - best is to use the shell script of Drew Crawford :
  His git repo can be found here:
  https://github.com/drewcrawford/libzmq-ios.git)
 (since his git-clone of libzmq does not clone or download everyhing, you need to manually download the libsodium-ios subfolder, add it to your initially downloaded libzmq-ios, and you are good to go..)
 
 	- edit the downloaded libzmq.sh and add newest zeromq tar version (currently TARNAME="zeromq-4.1.5")
-	
+
 	- execute the shell script in terminal, use:
 	> bash libzmq.sh
 
